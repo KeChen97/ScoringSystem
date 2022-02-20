@@ -154,17 +154,11 @@ public class ScoringSystem {
     scoringSystem.rooms.add(storage);
     scoringSystem.rooms.add(bedroom);
 
-    double areaTotal = scoringSystem.getTotalArea();
-    double areaPublic = scoringSystem.getPublicArea();
-    double areaPrivate = scoringSystem.getPrivateArea();
-    double areaUse = scoringSystem.getTotalArea() - garage.getArea();
-    double score = scoringSystem.getScore();
-
-    System.out.println(areaTotal);
-    System.out.println(areaPublic);
-    System.out.println(areaPrivate);
-    System.out.println(areaUse);
-    System.out.println(score);
+    System.out.println(scoringSystem.getTotalArea());
+    System.out.println(scoringSystem.getPublicArea());
+    System.out.println(scoringSystem.getPrivateArea());
+    System.out.println(scoringSystem.getTotalArea() - garage.getArea());
+    System.out.println(scoringSystem.getScore());
 
 
   }
